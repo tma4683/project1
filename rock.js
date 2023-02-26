@@ -37,7 +37,7 @@ export function getRockRects(){
 function createRock(){
     const rock = document.createElement("img");
     rock.dataset.rock = true;
-    rock.src = "imgs/Cartoon-Rock.png";
+    rock.src = "imgs/rock.png";
     rock.classList.add("rock");
     setCustomProperty(rock,"--left", 100);
     worldElem.append(rock);   

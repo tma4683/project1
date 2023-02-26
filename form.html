@@ -1,138 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Form | JumpRush</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-	<!-- Custom stylesheet -->
-	<link rel="stylesheet" href="index.css">
-</head>
-
-<body>
-	<header>
-        <img class="logo_img" src="imgs/logo6.png" alt="JumpRush Logo">
-		<img class="title_img" src="imgs/jumprush-removebg-preview.png" alt="JumpRush Title">
-	</header>
-    
-    <!--Nav done using bootstrap-->
-    <nav class="p-3 m-0 border-0 bd-example">
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">JumpRush</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="form.html">Get Started</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">    
-                    <li><a class="dropdown-item" href="#objective">Objective</a></li>
-                    <li><a class="dropdown-item" href="#rules">Rules</a></li>
-                    <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="imagegallery.html">Image gallery</a></li>
-                  </ul>
-                </li>
-              </ul>
+  <head>
+      <title>Get Started</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <link rel="stylesheet" href="index.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+      <header>
+        <img  class="logo_img" src="imgs/logo6.png" alt="JumpRush Logo">
+        <img  class="title_img" src="imgs/jumprush-removebg-preview.png" alt="JumpRush Title">
+      </header>
+  
+      <!--Nav done using bootstrap-->
+      <nav class="p-3 m-0 border-0 bd-example">
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">JumpRush</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="form.html">Get Started</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">    
+                      <li><a class="dropdown-item" href="#objective">Objective</a></li>
+                      <li><a class="dropdown-item" href="#rules">Rules</a></li>
+                      <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="imagegallery.html">Image gallery</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </nav>
+      </nav>
+      <!--Nav Ends Here-->
+
+      <!--Form STart-->
+        <div class="container-sm mt-3">
+          <h3 class="form-h3">Register</h3>
+          <p class="form-p">Please fill out the form and press submit to play the game !</p>
+          <form action="game.html" class="was-validated" method="get">
+            <div class="mb-3 mt-3">
+              <label for="first-name" class="form-label">First Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-name"
+                placeholder="Enter your first name"
+                name="first-name"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3 mt-3">
+              <label for="-name" class="form-label">Last Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="last-name"
+                placeholder="Enter your family name"
+                name="last-name"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="mb-3 mt-3">
+              <label for="uname" class="form-label">Username:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="uname"
+                placeholder="Enter username"
+                name="uname"
+                required
+              />
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="myCheck"
+                name="remember"
+                required
+              />
+              <label class="form-check-label" for="myCheck"
+                >I agree on saving my data.</label
+              >
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit" />
+          </form>
+        </div>
+        <!--Form End-->
+
+        <!--Footer Start-->
+        <footer id="contact">
+          <div class="links">
+              <h4>Contact Information</h4>
+              <p><b>Address: RIT Dubai,UAE</b></p>
+              <p><b>Phone: 555-555-5555</b></p>
+              <p><b>Email: info@jumprush.com</b></p>    
           </div>
-        </nav>
-    </nav>
-    <!--Nav Ends Here-->
 
-    <!--Form STart-->
-    <div class="container-sm mt-3">
-      <h3>Register</h3>
-      <p>Please fill out the form and press submit to play the game.</p>
-      <form action="game.html" class="was-validated" method="get">
-        <div class="mb-3 mt-3">
-          <label for="first-name" class="form-label">First Name:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="first-name"
-            placeholder="Enter your first name"
-            name="first-name"
-            required
-          />
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-        </div>
-        <div class="mb-3 mt-3">
-          <label for="-name" class="form-label">Last Name:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="last-name"
-            placeholder="Enter your family name"
-            name="last-name"
-            required
-          />
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-        </div>
-        <div class="mb-3 mt-3">
-          <label for="uname" class="form-label">Username:</label>
-          <input
-            type="text"
-            class="form-control"
-            id="uname"
-            placeholder="Enter username"
-            name="uname"
-            required
-          />
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-        </div>
-        <div class="form-check mb-3">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="myCheck"
-            name="remember"
-            required
-          />
-          <label class="form-check-label" for="myCheck"
-            >I agree on saving my data.</label
-          >
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Check this checkbox to continue.</div>
-        </div>
-        <input type="submit" class="btn btn-primary" value="Submit" />
-      </form>
-    </div>
-    <!--Form End-->
+          <div class="achievements">
+              <h4>Achievements</h4>
+              <ul>
+                  <li><b>First Place in the 2022 Best Game Awards</b></li>
+                  <li><b>Top 5 in the 2021 Game Development Contest</b></li>
+                  <li><b>Received the 2020 Gaming Award</b></li>
+              </ul>
+          </div>
+        </footer>
+        <!--Footer End-->
 
-    <!--Footer Start-->
-	<footer id="contact">
-    <div class="links">
-        <h4>Contact Information</h4>
-        <p><b>Address: RIT Dubai,UAE</b></p>
-        <p><b>Phone: 555-555-5555</b></p>
-        <p><b>Email: info@jumprush.com</b></p>    
-    </div>
-
-    <div class="achievements">
-        <h4>Achievements</h4>
-        <ul>
-            <li><b>First Place in the 2022 Best Game Awards</b></li>
-            <li><b>Top 5 in the 2021 Game Development Contest</b></li>
-            <li><b>Received the 2020 Gaming Award</b></li>
-        </ul>
-    </div>
-</footer>
-<!--Footer End-->  
-</body>
+  </body>
 </html>

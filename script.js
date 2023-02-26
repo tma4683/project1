@@ -6,10 +6,24 @@ const WORLD_HEIGHT = 30;
 const scoreElem = document.querySelector("[data-score]");
 const startScreenElem = document.querySelector("[data-start-screen]");
 const worldElem = document.querySelector("[data-world]");
+const uname = document.querySelector("[data-uname]");
+const name = document.querySelector("[data-name]");
+const lastScore = document.querySelector("[data-lastscore]");
+const params = new URLSearchParams(window.location.search);
+
+
 
 setPixelWorldScale();
 window.addEventListener("resize", setPixelWorldScale);
 document.addEventListener("keydown", handleStart, { once: true });
+
+var userName=params.get('uname');
+var firstName=params.get('first-name');
+var lastName=params.get('last-name');
+name.textContent = "Name: " + firstName + " " + lastName;
+uname.textContent = "Username:" + " " + userName;
+
+
 
 let lastTime;
 let speedScale;
@@ -45,7 +59,7 @@ function handleStart() {
 
 function updateScore(delta) {
   score += delta * 0.01; //for every 10s, score increases by 10
-  scoreElem.textContent = Math.floor(score);
+  scoreElem.textContent = "Score:" + Math.floor(score);
 }
 
 function updateSpeedScale(delta) {
@@ -71,6 +85,14 @@ function handleLose() {
     document.addEventListener("keydown", handleStart, { once: true })
     startScreenElem.classList.remove("hide");
   }, 100);
+  handleLastScore();
+}
+
+function handleLastScore(){
+  localStorage.setItem('previousScore',score);
+  var previousScore = localStorage.getItem('previousScore');
+  console.log(Math.floor(previousScore));
+  lastScore.innerHTML = "Last Score: " + Math.floor(previousScore);
 }
 
 function setPixelWorldScale() {
@@ -83,3 +105,4 @@ function setPixelWorldScale() {
   worldElem.style.width = `${WORLD_WIDTH * worldToPixelScale}px`;
   worldElem.style.height = `${WORLD_HEIGHT * worldToPixelScale}px`;
 }
+

@@ -2,7 +2,7 @@ import { setCustomProperty,incrementCustomProperty, getCustomProperty } from "./
 
 const astroElem = document.querySelector("[data-astro]");
 const JUMP_SPEED = .45;
-const GRAVITY = .0013;
+const GRAVITY = .0015;
 const ASTRO_FRAME_COUNT = 2;
 const FRAME_TIME = 100; //every single frame of our animation should last 100ms 
 

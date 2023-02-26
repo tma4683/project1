@@ -206,6 +206,127 @@ body{
   }
   /* ImageGallery Page End*/
 
+/* Form start */
+.container-sm .mt-3{
+  padding: 2%;
+  color: var(--dark-purple);
+  font-family: "Comic Sans MS", "Papyrus", "Curlz MT", "Jokerman", "Brush Script MT", "Harrington", "Zapfino", cursive, fantasy;
+  background-color: var(--dark-blue);
+  border-radius: 1%;
+}
+
+.form-h3{
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  color: var(--pink);
+  text-decoration: underline dashed;
+  flex: 1;
+  text-align: center;
+  font-family: "Comic Sans MS", "Papyrus", "Curlz MT", "Jokerman", "Brush Script MT", "Harrington", "Zapfino", cursive, fantasy;   
+}
+
+.form-p{
+  color: var(--purple);
+  text-align: center;
+  font-family: "Comic Sans MS", "Papyrus", "Curlz MT", "Jokerman", "Brush Script MT", "Harrington", "Zapfino", cursive, fantasy;
+}
+/* Form End */
+
+/*Game CSS */
+*,*::before,*::after{
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.game-body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./imgs/stars.jpg");
+    background-size: 2000px;;
+}
+
+.world{
+    overflow: hidden;
+    position: relative;
+}
+
+
+.score{
+    position: absolute;
+    font-size: 3vmin;
+    right: 1vmin;
+    top: 1vmin;
+    color: white;
+}
+
+.last-score{
+    position: absolute;
+    font-size: 3vmin;
+    right: 1vmin;
+    top: 5vmin;
+    color: white;
+}
+
+.uname{
+    position: absolute;
+    font-size: 3vmin;
+    left: 1vmin;
+    top: 5vmin;
+    color: white;
+}
+
+.name{
+  position: absolute;
+  color: white;
+  font-size: 3vmin;
+  left: 1vmin;
+  top: 1vmin;
+}
+
+.start-screen{
+    color: white;
+    position: absolute;
+    font-size: 5vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hide{
+    display: none;
+}
+
+.ground{
+    --left:0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left:calc(var(--left) * 1%);
+    filter: invert(1);
+}
+
+.astronaut{
+    --bottom:0;
+    position: absolute;
+    left: 1%;
+    height: 30%;
+    bottom: calc(var(--bottom) * 1%);
+}
+
+.rock{
+    position: absolute;
+    height: 30%;
+    left: calc(var(--left) * 1%);
+    bottom: 0;
+}
+
   /* Footer Start */
   footer {
     margin-bottom: 0%;
