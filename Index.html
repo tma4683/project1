@@ -12,46 +12,42 @@
 </head>
 <body>
 	<header>
-        <img  class="logo_img" src="logo6.png" alt="JumpRush Logo">
-		<img  class="title_img" src="jumprush-removebg-preview.png" alt="JumpRush Title">
+        <img  class="logo_img" src="imgs/logo6.png" alt="JumpRush Logo">
+		<img  class="title_img" src="imgs/jumprush-removebg-preview.png" alt="JumpRush Title">
 	</header>
     
     <!--Nav done using bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #010108">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="index.html">
-            HomePage
-        </a>
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-            <!-- Collapsible wrapper -->
+    <nav class="p-3 m-0 border-0 bd-example">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">JumpRush</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- Link -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#objective">Objective</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#rules">Rules</a>
+                  <a class="nav-link" href="form.html">Get Started</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Image Gallery</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">    
+                    <li><a class="dropdown-item" href="#objective">Objective</a></li>
+                    <li><a class="dropdown-item" href="#rules">Rules</a></li>
+                    <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#gallery">Image gallery</a></li>
+                  </ul>
                 </li>
-                <!--Might remove this-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Get Started</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-                </ul>
+              </ul>
             </div>
-        </div>
-        <!-- Container wrapper -->
+          </div>
+        </nav>
     </nav>
     <!--Nav Ends Here-->
 

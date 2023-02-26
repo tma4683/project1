@@ -4,7 +4,7 @@
     margin: 0%;
   }
   
-  body{
+body{
     background-color: var(--black);
   }
   /* General Formatting End*/
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("back2.jpg");
+    background-image: url("imgs/back2.jpg");
     background-size: contain;
     height: 7%;
     padding: .1%;
@@ -35,6 +35,7 @@
     width: 7.25rem;
     height: 8rem;
   }
+
   .title_img{
     width: 25%;
     height: 70%;
@@ -43,52 +44,28 @@
   
   /* Nav section */
   nav{
-    border-bottom: 6px solid var(--dark-blue);
+    background-color: var(--dark-blue);
   }
-  
-  .navbar-brand {
-    font-family: "Comic Sans MS", "Papyrus", "Curlz MT", "Jokerman", "Brush Script MT", "Harrington", "Zapfino", cursive, fantasy;
-    font-weight: bold;
-    font-size: 1.875rem;
-    color: white;
-    padding-top: 0%;
-  }
-  
-  a.navbar-brand:hover, a.navbar-brand:focus {
-    border-bottom: 3px dashed var(--purple);
-    color: var(--dark-purple);
-  }
-  
-  .navbar-nav li a:hover, .navbar-nav li a:focus {
-    border-bottom: 3px solid var(--pink);
-    color: var(--dark-purple);
-  }
-  
-  .navbar-nav {
-    text-align:center;
-  }
-  
-  .navbar-nav li {
-    display: inline-block;
-    margin: 0 2.7rem;
-    padding-top: 1%;
-  }
-  
-  .navbar-nav li a {
-    color: white;
-    font-size: 1.25rem;
+
+  .nav-item dropdown, .nav-item {
+    text-decoration: 2px underline dashed var(--dark-purple);
     font-weight: 500;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.008rem 0;
-    border-bottom: 3px solid transparent;
     font-family: "Comic Sans MS", "Papyrus", "Curlz MT", "Jokerman", "Brush Script MT", "Harrington", "Zapfino", cursive, fantasy;
+    font-size: 1rem;
+    }
+    
+  .navbar-brand{
+    text-decoration: 2.5px underline solid var(--dark-purple);
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding-left: 1%;
+    padding-right: 0.7%;
   }
   /* Nav section End*/
   
   /* Objective section */
   .container {
-    background-image: url("back16.jpg");
+    background-image: url("imgs/back16.JPG");
     background-size: cover;
     position: relative;
     height: 60vh;
