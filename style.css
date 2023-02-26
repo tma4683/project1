@@ -169,6 +169,44 @@ body{
   /* Rules Media Query Section End*/
   /* Rules section End*/
   
+  /* ImageGallery Page Start*/
+  .imageh1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    text-align: center; 
+    font-family: "Comic Sans MS", "Papyrus", "Curlz MT", "Jokerman", "Brush Script MT", "Harrington", "Zapfino", cursive, fantasy;
+  }
+  .img-container {
+    padding: 1%;
+    background-color: var(--dark-purple);
+  }
+  
+  .img-box{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    border: var(--purple) dotted 0.5rem;
+    margin: 2%;
+  }
+  .imagegal{
+    height: 25rem;
+    padding: 0.5%;
+    width: 100%;
+  }
+  .img-box:hover .imagegal{
+    filter: brightness(170%);
+    transition: all ease-in-out 500ms;
+    display: block;
+  }
+  /* ImageGallery Page End*/
+
+  /* Footer Start */
   footer {
     margin-bottom: 0%;
     width: 100%;
@@ -233,6 +271,7 @@ body{
   .achievements li {
       margin-bottom: 5px;
   }
+  /* Footer End */
   
   
   
