@@ -27,6 +27,22 @@ body{
     color: white;
 }
 
+.last-score{
+    position: absolute;
+    font-size: 3vmin;
+    right: 1vmin;
+    top: 5vmin;
+    color: white;
+}
+
+.name{
+    position: absolute;
+    font-size: 3vmin;
+    left: 1vmin;
+    top: 1vmin;
+    color: white;
+}
+
 .start-screen{
     color: white;
     position: absolute;

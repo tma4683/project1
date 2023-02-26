@@ -1,125 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home | JumpRush</title>
-	<!-- Bootstrap stylesheet -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
-        function validateForm() {
-			var name = document.forms["myForm"]["name"].value;
-
-			if (name == "") {
-				alert("Please enter your name");
-				return false;
-			}
-
-		}
-    </script>
-	<!-- Custom stylesheet -->
-	<link rel="stylesheet" href="style3.css">
-</head>
-<body>
-	<header>
-        <img  class="logo_img" src="logo6.png" alt="JumpRush Logo">
-		<img  class="title_img" src="jumprush-removebg-preview.png" alt="JumpRush Title">
-	</header>
-    <!--Nav done using bootstrap-->
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #010108">
-        <!-- Container wrapper -->
-        <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand" href="index.html">
-            HomePage
-        </a>
-        <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-            <!-- Collapsible wrapper -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <!-- Link -->
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Objective</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Rules</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Image Gallery</a>
-                </li>
-                <!--Might remove this-->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Get Started</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-                </ul>
-            </div>
+  <head>
+    <title>Get Started</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+    <div class="container-sm mt-3">
+      <h3>Register</h3>
+      <p>Please fill out the form and press submit to play the game.</p>
+      <form action="game.html" class="was-validated" method="get">
+        <div class="mb-3 mt-3">
+          <label for="first-name" class="form-label">First Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="first-name"
+            placeholder="Enter your first name"
+            name="first-name"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
         </div>
-        <!-- Container wrapper -->
-    </nav>
-    <!--Nav Ends Here-->
-    <div class="container">
-		<h1 class="validation">Validation Form</h1>
-		<form name="myForm" onsubmit="return validateForm()" method="post">
-			<div class="form-group">
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" class="form-control">
-			</div>
-
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>
-    function submitForm() {
-        let name = document.getElementById("name").value;
-        let username = document.getElementById("username").value;
-      
-        let resultsDiv = document.createElement("div");
-        resultsDiv.innerHTML = `Name: ${name} <br> Username: ${username} `;
-      
-        let file = new Blob([resultsDiv], {type: 'text/html'});
-        let fileName = "results.html";
-      
-        let downloadLink = document.createElement("a");
-      
-        downloadLink.href = URL.createObjectURL(file);
-        downloadLink.download = fileName;
-        downloadLink.innerHTML = "Click Here To Download";
-      
-        document.body.appendChild(downloadLink);
-      
-        downloadLink.click();
-      }
-      </script>
-    
-	<footer id="contact">
-        <div class="links">
-            <h4>Contact Information</h4>
-            <p><b>Address: RIT Dubai,UAE</b></p>
-            <p><b>Phone: 555-555-5555</b></p>
-            <p><b>Email: info@jumprush.com</b></p>  
+        <div class="mb-3 mt-3">
+          <label for="-name" class="form-label">Last Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="last-name"
+            placeholder="Enter your family name"
+            name="last-name"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
         </div>
-        <div class="achievements">
-            <h4>Achievements</h4>
-            <ul>
-                <li><b>First Place in the 2022 Best Game Awards</b></li>
-                <li><b>Top 5 in the 2021 Game Development Contest</b></li>
-                <li><b>Received the 2020 Gaming Award</b></li>
-            </ul>
+        <div class="mb-3 mt-3">
+          <label for="uname" class="form-label">Username:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="uname"
+            placeholder="Enter username"
+            name="uname"
+            required
+          />
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Please fill out this field.</div>
         </div>
-
-        
-
-
-    </footer>
-    
-</body>
+        <div class="form-check mb-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="myCheck"
+            name="remember"
+            required
+          />
+          <label class="form-check-label" for="myCheck"
+            >I agree on saving my data.</label
+          >
+          <div class="valid-feedback">Valid.</div>
+          <div class="invalid-feedback">Check this checkbox to continue.</div>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>
