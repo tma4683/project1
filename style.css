@@ -47,7 +47,7 @@ body{
     background-color: var(--dark-blue);
   }
 
-  .nav-item dropdown, .nav-item {
+  .nav-item {
     text-decoration: 2px underline dashed var(--dark-purple);
     font-weight: 500;
     font-family: "Comic Sans MS", "Papyrus", "Curlz MT", "Jokerman", "Brush Script MT", "Harrington", "Zapfino", cursive, fantasy;
