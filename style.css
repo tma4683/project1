@@ -60,8 +60,12 @@ body{
     font-size: 1.5rem;
     padding-left: 1%;
     padding-right: 1%;
+<<<<<<< Updated upstream
     border-right: var(--purple) dashed;
 
+=======
+    border-right: var(--purple) dashed;
+>>>>>>> Stashed changes
   }
   /* Nav section End*/
   
