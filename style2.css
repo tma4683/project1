@@ -1,0 +1,67 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./imgs/stars.jpg");
+    background-size: 2000px;;
+}
+
+.world{
+    overflow: hidden;
+    position: relative;
+}
+
+
+.score{
+    position: absolute;
+    font-size: 3vmin;
+    right: 1vmin;
+    top: 1vmin;
+    color: white;
+}
+
+.start-screen{
+    color: white;
+    position: absolute;
+    font-size: 5vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.hide{
+    display: none;
+}
+
+.ground{
+    --left:0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left:calc(var(--left) * 1%);
+    filter: invert(1);
+}
+
+.astronaut{
+    --bottom:0;
+    position: absolute;
+    left: 1%;
+    height: 30%;
+    bottom: calc(var(--bottom) * 1%);
+}
+
+.rock{
+    position: absolute;
+    height: 30%;
+    left: calc(var(--left) * 1%);
+    bottom: 0;
+    filter: invert(1);
+}
